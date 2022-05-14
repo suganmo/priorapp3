@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  */
+ * { font-family: 'Noto Sans JP', sans-serif; }
 
  @import "bootstrap/scss/bootstrap";
  
@@ -21,3 +22,33 @@
   margin-bottom: 15px;
   margin-left: 50px;
  }
+ 
+ .snew{
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+ 
+ .pnew{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 623px;
+ }
+
+ .cnew{
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+
+ .pedit{
+  margin-top: 15px;
+  margin-bottom: 15px;
+ }
+
+
+.h22{
+  font-size: 33px;
+  letter-spacing: -1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 450px;
+}

@@ -1,17 +1,17 @@
-<h2 class="offset-5"><%= t('.sign_up') %></h2>
+<h2 class="col-4 offset-5"><%= t('.sign_up') %></h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-<div style="margin-left: 490px", class="col-3">
+<div style="margin-left: 470px", class="col-4">
   <%= render "devise/shared/error_messages", resource: resource %>
   </div>
   <div class="col-2 offset-5">
   <div class="field">
     <%= f.label :name %><br />
-    <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"form-control form-control-sm", style:"width: 200px" %>
+    <%= f.text_field :name, autofocus: true, autocomplete: "name", class:"form-control form-control-sm", style:"width: 220px" %>
   </div>
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control form-control-sm", style:"width: 200px"  %>
+    <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"form-control form-control-sm", style:"width: 220px"  %>
   </div>
 
   <div class="field">
@@ -19,12 +19,12 @@
     <% if @minimum_password_length %>
     <%= t('devise.shared.minimum_password_length', count: @minimum_password_length) %>
     <% end %>
-    <%= f.password_field :password, autocomplete: "new-password", class:"form-control form-control-sm", style:"width: 200px"  %>
+    <%= f.password_field :password, autocomplete: "new-password", class:"form-control form-control-sm", style:"width: 220px"  %>
   </div>
 
   <div class="field">
     <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control form-control-sm", style:"width: 200px"  %>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password", class:"form-control form-control-sm", style:"width: 220px"  %>
   </div>
 
   <div class="actions rnew">
