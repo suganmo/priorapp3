@@ -32,8 +32,13 @@ ja:
         password: "パスワード"
         password_confirmation: "確認用パスワード"
         remember_me: "次回から自動的に口グイン"
+      article:
+        title: タイトル
+        content: 内容
+        image: 画像
     models:
       user: "ユーザ"
+      article: 記事
   devise:
     confirmations:
       new:
@@ -94,3 +99,21 @@ ja:
         resend_unlock_instructions: "アカウントの凍結解除方法を再送する"
     letter_opener:
       From:
+    users:
+      articles:
+        index:
+          detail: 詳細
+          btn_detail: 詳細表示
+          edit_and_destroy: 編集・削除
+          edit: 編集
+          destroy: 削除
+        show:
+          edit: 編集
+          destroy: 削除
+          btn_to_index: 記事一覧へ戻る
+        new:
+          btn_create: 新規作成
+          back: 戻る
+        edit:
+          btn_update: 更新する
+          back: 戻る
