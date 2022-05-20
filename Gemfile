@@ -21,6 +21,7 @@ gem "devise"
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'rails-i18n', '~> 6.0'
 gem "devise-i18n"
+gem 'carrierwave'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

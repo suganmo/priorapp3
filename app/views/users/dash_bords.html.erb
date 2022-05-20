@@ -1,6 +1,18 @@
 <h1 class="text-center">Dash Bords</h1>
+<% if user_signed_in? %>
 <h3 class="text-center"><%= current_user.name %></h3>
-  <div class="col-12">
-    <%= link_to "編集", edit_user_registration_path, class: "btn btn-primary col-4 offset-4" %>
-    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-warning col-4 offset-4" %>
+  <div class="col-12 py-2 ">
+    <%= link_to "記事一覧", users_articles_path, class: "btn btn-lg btn-primary text-white col-4 offset-4" %>
   </div>
+  <div class="col-12 py-2">  
+    <%= link_to "編集", edit_user_registration_path, class: "btn btn-lg btn-primary text-white col-4 offset-4" %>
+    </div>
+  <div class="col-12 py-2">
+    <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-lg btn-warning col-4 offset-4" %>
+  </div>
+  </div>
+ <% else %>
+    <%= link_to "ログイン", new_user_session_path %>
+    <%= link_to "新規登録", new_user_registration_path %>
+  <% end %>
+</div>

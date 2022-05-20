@@ -1,0 +1,31 @@
+<h1 class="text-center">記事詳細</h1>
+<div class="container">
+  <div class="row">
+<div class="col-10">
+  <table class="table text-center offset-2">
+    <thead>
+      <tr>
+        <th><%= Article.human_attribute_name(:title)%></th>
+        <th><%= Article.human_attribute_name(:content)%></th>
+        <th><%= Article.human_attribute_name(:image)%></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><%= @article.title %></td>
+        <td><%= @article.content %></td>
+        <td><%= image_tag @article.image.url if @article.image? %></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+  <div class="text-center">
+    <%= link_to "編集", edit_users_article_path, class: "btn btn-success text-white " %>
+    <%= link_to "削除", users_article_path, method: :delete, class: "btn btn-danger text-white  ml-1" %>
+  </div>
+
+  <div class="text-center my-3">
+    <%= link_to "一覧に戻る", users_articles_path, class: "btn btn-primary text-white " %>
+  </div>
+</div> 
